@@ -1,7 +1,0 @@
-function buttondisappear(){
-
-}
-
-function buttonappear(){
-    
-}
