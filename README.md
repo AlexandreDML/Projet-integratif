@@ -16,8 +16,9 @@ des données caloriques (protide, lipide, glucide).
  
  lien vers google drive : excel : (Matrice raci/ Matrice de criticité/ SWOT/ Tableau des tâches/ Partie prenante/ Réunions) 
                                    https://docs.google.com/spreadsheets/d/1eST6Gm32eScPSfYnH_qm0TuNy5vrvTsm/edit#gid=1341654986
-
-                          word (final): 
+                          word (livrable):
+                          https://docs.google.com/document/d/1veGj8PF0UW4OZNKBLOWlotH7g6EDbVhCIxUM3PW9o3I/edit
+                          word (bdd) : 
                           https://docs.google.com/document/d/1MaNlu12jF6UvtQyZe9REeH1VhQoCOZjzFGqo9BPctbQ/edit
                           
                           word (questionnaire) : 
