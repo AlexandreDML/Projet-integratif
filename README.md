@@ -14,8 +14,10 @@ des données caloriques (protide, lipide, glucide).
  lien vers le board github: https://github.com/users/AlexandreDML/projects/1/views/1
  lien vers le Trello : https://trello.com/b/R1xKAmsL/studhealthy
  
- lien vers google drive : excel : (Matrice raci/ Matrice de criticité/ SWOT/ Tableau des tâches/ Partie prenante/ Réunions) 
-                                   https://docs.google.com/spreadsheets/d/1eST6Gm32eScPSfYnH_qm0TuNy5vrvTsm/edit#gid=1341654986
+ lien vers google drive : 
+ excel : (Matrice raci/ Matrice de criticité/ SWOT/ Tableau des tâches/ Partie prenante/ Réunions) 
+https://docs.google.com/spreadsheets/d/1eST6Gm32eScPSfYnH_qm0TuNy5vrvTsm/edit#gid=1341654986
+
 word (livrable):
 https://docs.google.com/document/d/1veGj8PF0UW4OZNKBLOWlotH7g6EDbVhCIxUM3PW9o3I/edit
 
