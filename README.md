@@ -18,10 +18,11 @@ des données caloriques (protide, lipide, glucide).
                                    https://docs.google.com/spreadsheets/d/1eST6Gm32eScPSfYnH_qm0TuNy5vrvTsm/edit#gid=1341654986
 
                           word (final): 
-                          
                           https://docs.google.com/document/d/1MaNlu12jF6UvtQyZe9REeH1VhQoCOZjzFGqo9BPctbQ/edit
+                          
                           word (questionnaire) : 
                           https://docs.google.com/document/d/1WSSkYB5oCVjLAim57GiXTMwSnei6BMkCVOJ2CxpuJL8/edit#
+                          
                           ppt : 
                           https://docs.google.com/presentation/d/1v9fhuVxtkGgy7tHAcpNQsJydF-f9oxDZ/edit#slide=id.p1
 
