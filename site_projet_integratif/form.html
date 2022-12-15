@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>Stud'healthy</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+  <!-- MDB -->
+  <link rel="stylesheet" href="css/mdb.min.css" />
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="css/form.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js" integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw=="
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="intro">
+        <div class="d-flex align-items-center ">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-12 col-lg-10">
+                  <div class="card" style="border-radius: 1rem;">
+                    <div class="card-body p-5">
+                    <h1 class="mb-5 text-center">Questionnaire Personnel</h1>
+                      <form>
+                        <!--Question 1-->
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">En quelle année êtes-vous ?</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option value="1">Première année</option>
+                                <option value="2">Deuxième année</option>
+                                <option value="3">Troisième année</option>
+                                <option value="4">Master première année</option>
+                                <option value="5">Master deuxième année</option>
+                            </select>
+                        </div>
+                        <!--Question 2-->
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Quel est votre sexe ?</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option value="1">Homme</option>
+                                <option value="2">Femme</option>
+                            </select>
+                        </div>
+                        <!--Question 3-->
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Quel est votre poids en kg (approximativement) ?
+                            </label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="[Min : 30 – Max : 200]">
+                        </div>
+                        <!--Question 4-->
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Quel est votre taille en cm (approximativement) ?
+                            </label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="[Min : 130 – Max : 220]">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Combien de fois par semaine pratiquez-vous une activité sportive ? </label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option value="1">Jamais</option>
+                                <option value="2">Une fois</option>
+                                <option value="3">Deux fois</option>
+                                <option value="4">Trois fois</option>
+                                <option value="5">Quatre fois</option>
+                                <option value="6">Cinq fois</option>
+                            </select>
+                        </div>
+                        <!--Question 5-->
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Quelle activité sportive pratiquée vous ? </label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option value="1">Aucune</option>
+                                <option value="2">Marche</option>
+                                <option value="3">Course à pied</option>
+                                <option value="4">Vélo</option>
+                                <option value="5">Natation</option>
+                                <option value="6">Musculation</option>
+                                <option value="7">Autre</option>
+                            </select>
+                        </div>
+                        <!--Question 6-->
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Combien de temps pratiquez-vous cette activité ?</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option value="1">30 mins</option>
+                                <option value="2">1 heure</option>
+                                <option value="3">2 heures</option>
+                                <option value="4">Autre</option>
+                            </select>
+                        </div>
+                        <!--Question 7-->
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Dans quelle but voulez-vous faire du sport ?</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option value="1">Déstresser</option>
+                                <option value="2">Perdre du poids</option>
+                                <option value="3">Prendre soins de sa santé</option>
+                                <option value="4">Se muscler</option>
+                                <option value="5">Occuper votre temps</option>
+                                <option value="6">Autre</option>
+                            </select>
+                        </div>
+                        <!--Question 8-->
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Respectez-Vous les trois repas journaliers ? (cochez les repas que vous prenez)</label>
+                            <div class="form-check">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">Petit déjeuner</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">Déjeuner</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">Diner</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Question 9-->
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Êtes-vous: </label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option value="1">Végétarien</option>
+                                <option value="2">Végan</option>
+                                <option value="3">Un super mangeur de viande</option>
+                            </select>
+                        </div>
+                        <!--Question 10-->
+                        <div>
+                            <label for="exampleFormControlInput1" class="form-label">Quels aliments mangez-vous quotidiennement ?</label>
+                        </div>
+                        <div class="form-check">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">Fruits</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">Légumes</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">Viande/Poisson</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">Laitage</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">Féculents</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">Sucrerie</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">Autre</label>
+                            </div>
+                        </div>
+                        <!--Question 11-->
+                        <div>
+                            <label for="exampleFormControlInput1" class="form-label">Quels aliments mangez-vous une fois par semaine ?</label>
+                        </div>
+                        <div class="form-check">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">Fruits</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">Légumes</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">Viande/Poisson</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">Laitage</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">Féculents</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">Sucrerie</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">autre</label>
+                            </div>
+                        </div>
+                        <!--Question 12-->
+                        <div>
+                            <label for="exampleFormControlInput1" class="form-label">Quels aliments ne mangez-vous jamais ?</label>
+                        </div>
+                        <div class="form-check">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">Fruits</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">Légumes</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">Viande/Poisson</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">Laitage</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">Féculents</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">Sucrerie</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">autre</label>
+                            </div>
+                        </div>
+                        <!--Question 13-->
+                        <div>
+                            <label for="exampleFormControlInput1" class="form-label">Y a-t-il un aliment  auquel vous êtes allergique? Si oui lequel ?</label>
+                        </div>
+                        <div class="form-check">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">Fruits</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">Légumes</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">Viande/Poisson</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">Laitage</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">Féculents</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">Sucrerie</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">autre</label>
+                            </div>
+                        </div>
+                        <br>
+                        <!-- Submit button -->
+                        <a type="submit" class="btn btn-secondary btn-rounded btn-block" href="admin.html">Envoyer</a>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> 
+        </div>
+    </section>
+</body>
+</html>

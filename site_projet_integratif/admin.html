@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>Stud'healthy</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+  <!-- MDB -->
+  <link rel="stylesheet" href="css/mdb.min.css" />
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="css/admin.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js" integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw=="
+    crossorigin="anonymous"></script>
+</head>
+<body>
+  <!--Main Navigation-->
+  <header>
+    <!-- Sidebar -->
+    <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white">
+      <div class="position-sticky">
+        <div class="list-group list-group-flush mx-3 mt-4">
+          <a href="#" class="list-group-item list-group-item-action py-2 ripple active">
+            <i class="fas fa-home fa-fw me-3"></i><span>Stud'healthy</span>
+          </a>
+          <a href="#IMC" class="list-group-item list-group-item-action py-2 ripple">
+            <i class="fas fa-chart-line fa-fw me-3"></i><span>Graphique IMC</span>
+          </a>
+          <a href="#DA" class="list-group-item list-group-item-action py-2 ripple"><i
+            class="fas fa-chart-pie fa-fw me-3"></i><span>Graphique DA</span>
+          </a>
+          <a href="#resume" class="list-group-item list-group-item-action py-2 ripple"><i
+              class="fas fa-info fa-fw me-3"></i><span>Résume</span>
+          </a>
+          <a href="#sol1" class="list-group-item list-group-item-action py-2 ripple"><i
+              class="fas fa-utensils fa-fw me-3"></i><span>Solution 1</span></a>
+          <a href="#sol2" class="list-group-item list-group-item-action py-2 ripple"><i
+              class="fas fa-utensils fa-fw me-3"></i><span>Solution 2</span></a>
+          <a href="#sol3" class="list-group-item list-group-item-action py-2 ripple"><i
+              class="fas fa-utensils fa-fw me-3"></i><span>Solution 3</span></a>
+          <a class="btn btn-primary" href="form.html">Questionnaire</a>        </div>
+      </div>
+    </nav>
+    <!-- Sidebar -->
+
+    <!-- Navbar -->       <!--class="navbar navbar-expand-lg navbar-light bg-white fixed-top"-->
+    <nav id="main-navbar" class="navbar navbar-expand-lg fixed-top">
+      <!-- Container wrapper -->
+      <div class="container-fluid">
+        <!-- Toggle button -->
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#sidebarMenu"
+          aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Brand -->
+        <a class="navbar-brand" href="index.html">
+          <img src="img/Stud_healthy_notext.png" height="40" alt="" loading="lazy" />
+        </a>
+        <!-- Search form -->
+        <form class="d-none d-md-flex input-group w-auto my-auto">
+          <input autocomplete="off" type="search" class="form-control rounded"
+            placeholder='Rechercher...' style="min-width: 225px" />
+          <span class="input-group-text border-0"><i class="fas fa-search"></i></span>
+        </form>
+
+        <!-- Right links -->
+        <ul class="navbar-nav ms-auto d-flex flex-row">
+          <!-- Icon dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link me-3 me-lg-0 dropdown-toggle hidden-arrow" href="#" id="navbarDropdown" role="button"
+              data-mdb-toggle="dropdown" aria-expanded="false">
+              <i class="france flag m-0"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+              <li>
+                <a class="dropdown-item" href="#"><i class="france flag"></i>Français
+                <i class="fa fa-check text-success ms-2"></i></a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"><i class="china flag"></i>中文</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"><i class="united kingdom flag"></i>English</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"><i class="spain flag"></i>Español</a>
+              </li>
+            </ul>
+          </li>
+          <!-- Avatar -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle hidden-arrow d-flex align-items-center" href="#"
+              id="navbarDropdownMenuLink" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+              <i class="fas fa-user-alt"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="login.html">Se connecter</a></li>
+              <!--<li><a class="dropdown-item" href="#">Mon profil</a></li>
+              <li><a class="dropdown-item" href="#">Paramètre</a></li>
+              <li><a class="dropdown-item" href="#">Déconnexion</a></li>-->
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!-- Container wrapper -->
+    </nav>
+    <!-- Navbar -->
+  </header>
+  <!--Main Navigation-->
+
+  <!--Main layout-->
+  <main style="margin-top: 58px">
+    <div class="container pt-4">
+      <span class="anchor" id="IMC"></span>
+      <!--Button group-->
+      <div class="btn-group d-flex justify-content-center" role="group" aria-label="Basic example">
+        <button type="button" id="btn-france" class="btn btn-primary">France</button>
+        <button type="button" id="btn-miage" class="btn btn-primary">Miage</button>
+        <button type="button" id="btn-perso" class="btn btn-primary">Personnelle</button>
+      </div>
+      <!--Button group end-->
+      <br>
+      <!-- Section: Main chart line-->
+      <section class="mb-4" id="graphPerso">
+        <div class="card">
+          <div class="card-header py-3">
+            <h5 class="mb-0 text-center"><strong>IMC</strong></h5>
+          </div>
+          <div class="card-body">
+            <canvas class="my-4 w-100" id="myChart" height="380"></canvas>
+          </div>
+        </div>
+      </section>
+      <!-- Section: Main chart line end-->
+
+
+      <section class="mb-4" id="graphFR">
+        <div class="card">
+          <div class="card-header py-3">
+            <h5 class="mb-0 text-center"><strong>IMC</strong></h5>
+          </div>
+          <div class="card-body">
+            <h3>grapique en bâton ? Moyenne ? Pourcentage ?</h3>
+            <canvas class="my-4 w-100" id="myChart" height="92"></canvas>
+          </div>
+        </div>
+      </section>
+      <!-- Section: Main chart line end-->
+
+
+
+      <br>
+      <span class="anchor" id="DA"></span>
+      <!-- Section: Main chart bar-->
+      <section class="mb-4">
+        <div class="card">
+          <div class="card-header py-3">
+            <h5 class="mb-0 text-center"><strong>Données alimentaires</strong></h5>
+          </div>
+          <div class="card-body">
+            <canvas class="my-4 w-100" id="chart-pie" height="380"></canvas>
+          </div>
+        </div>
+      </section>
+      <!-- Section: Main chart bar end-->
+      <span class="anchor" id="resume"></span>
+      <!--Section: resume stats-->
+      <!--premier-->
+      <section id="resume">
+        <div class="row">
+          <div class="col-xl-6 col-md-12 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-flex justify-content-between p-md-1">
+                  <div class="d-flex flex-row">
+                    <div class="align-self-center">
+                      <i class="fas fa-pencil-alt text-info fa-3x me-4"></i>
+                    </div>
+                    <div>
+                      <h4>IMC</h4>
+                      <p class="mb-0">Imc normal</p>
+                    </div>
+                  </div>
+                  <div class="align-self-center">
+                    <h2 class="h1 mb-0">22.5</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Second-->
+          <div class="col-xl-6 col-md-12 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-flex justify-content-between p-md-1">
+                  <div class="d-flex flex-row">
+                    <div class="align-self-center">
+                      <i class="fas fa-pencil-alt text-info fa-3x me-4"></i>
+                    </div>
+                    <div>
+                      <h4>Données alimentaires</h4>
+                      <p class="mb-0">Calories</p>
+                    </div>
+                  </div>
+                  <div class="align-self-center">
+                    <h2 class="h1 mb-0">2538</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Section: resume stats end-->
+      <span class="anchor" id="sol1"></span>
+      <!--Section: Solution 1-->
+      <section class="mb-4">
+        <div class="card">
+          <div class="card-header text-center py-3">
+            <h5 class="mb-0 text-center">
+              <strong>Solution 1</strong>
+            </h5>
+          </div>
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table table-hover text-nowrap">
+                <thead>
+                  <tr>
+                    <th scope="col">petit déjeuner</th>
+                    <th scope="col">Déjeuner</th>
+                    <th scope="col">Diner</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>aliments: ??? Calories</td>
+                    <td>aliments: ??? Calories</td>
+                    <td>aliments: ??? Calories</td>
+                  </tr>
+                  <tr>
+                    <td>aliments: ??? Calories</td>
+                    <td>aliments: ??? Calories</td>
+                    <td>aliments: ??? Calories</td>
+                  </tr>
+                  <tr>
+                    <td>aliments ??? Calories</td>
+                    <td>aliments ??? Calories</td>
+                    <td>aliments ??? Calories</td>
+                  </tr>
+                </tbody>
+                <tfoot class="card-footer">
+                  <tr>
+                    <td></td>
+                    <td>
+                      <h6>Total calories: 1600 Cal</h6>
+                    </td>
+                    <td></td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+          </div>
+
+
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table table-hover text-nowrap">
+                <thead>
+                  <tr>
+                    <th scope="col">Activité sportive</th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Marche: 1 heure</td>
+                    <td>Course: 30 minutes</td>
+                    <td>Musculation: 30 minutes</td>
+                  </tr>
+                  <tr>
+                    <td>Natation: 1 heure</td>
+                    <td>Vélo: 2 heures</td>
+                    <td>Marche nordique: 45 minutes</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Section: Solution 1 end-->
+      <span class="anchor" id="sol2"></span>
+      <!--Section: Solution 2-->
+      <section class="mb-4">
+        <div class="card">
+          <div class="card-header text-center py-3">
+            <h5 class="mb-0 text-center">
+              <strong>Solution 2</strong>
+            </h5>
+          </div>
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table table-hover text-nowrap">
+                <thead>
+                  <tr>
+                    <th scope="col">petit déjeuner</th>
+                    <th scope="col">Déjeuner</th>
+                    <th scope="col">Diner</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>aliments</td>
+                    <td>aliments</td>
+                    <td>aliments</td>
+                  </tr>
+                  <tr>
+                    <td>aliments</td>
+                    <td>aliments</td>
+                    <td>aliments</td>
+                  </tr>
+                  <tr>
+                    <td>aliments</td>
+                    <td>aliments</td>
+                    <td>aliments</td>
+                  </tr>
+                </tbody>
+                <tfoot class="card-footer">
+                  <tr>
+                    <td></td>
+                    <td>
+                      <h6>Total calories: 2000 Cal</h6>
+                    </td>
+                    <td></td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+          </div>
+
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table table-hover text-nowrap">
+                <thead>
+                  <tr>
+                    <th scope="col">Activité sportive</th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Marche: 1 heure</td>
+                    <td>Course: 45 minutes</td>
+                    <td>Musculation: 45 minutes</td>
+                  </tr>
+                  <tr>
+                    <td>Natation: 45 minutes</td>
+                    <td>Vélo: 2 heures</td>
+                    <td>Marche nordique: 1 heure</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <!--Section: Solution 2 end-->
+      <span class="anchor" id="sol3"></span>
+      <!--Section: Solution 3-->
+      <section class="mb-4">
+        <div class="card">
+          <div class="card-header text-center py-3">
+            <h5 class="mb-0 text-center">
+              <strong>Solution 3</strong>
+            </h5>
+          </div>
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table table-hover text-nowrap">
+                <thead>
+                  <tr>
+                    <th scope="col">petit déjeuner</th>
+                    <th scope="col">Déjeuner</th>
+                    <th scope="col">Diner</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>aliments</td>
+                    <td>aliments</td>
+                    <td>aliments</td>
+                  </tr>
+                  <tr>
+                    <td>aliments</td>
+                    <td>aliments</td>
+                    <td>aliments</td>
+                  </tr>
+                  <tr>
+                    <td>aliments</td>
+                    <td>aliments</td>
+                    <td>aliments</td>
+                  </tr>
+                </tbody>
+                <tfoot class="card-footer">
+                  <tr>
+                    <td></td>
+                    <td>
+                      <h6>Total calories: 2200 Cal</h6>
+                    </td>
+                    <td></td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+          </div>
+
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table table-hover text-nowrap">
+                <thead>
+                  <tr>
+                    <th scope="col">Activité sportive</th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Marche: 2 heure</td>
+                    <td>Course: 1 heure et 15 minutes</td>
+                    <td>Musculation: 1 heure</td>
+                  </tr>
+                  <tr>
+                    <td>Natation: 45 minutes</td>
+                    <td>Vélo: 2 heures</td>
+                    <td>Marche nordique: 1 heure et 45 minutes</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <!--Section: Solution 3 end-->
+    </div>
+  </main>
+  <!--Main layout-->
+  <!-- MDB -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Custom scripts -->
+  <script type="text/javascript" src="js/admin.js"></script>
+</body>
+</html>
